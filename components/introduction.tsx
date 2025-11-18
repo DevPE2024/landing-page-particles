@@ -1,45 +1,84 @@
 import Image from "next/image";
-import { TypeAnimation } from 'react-type-animation';
 
 const Introduction = () => {
+
     return (
         <div className="z-20 w-full bg-darkBg/60">
-            <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
-                <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" />
-                <div className="flex flex-col justify-center max-w-md">
-                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
-                        <TypeAnimation
-                            sequence={[
-                                'puedes programarlo',
-                                1000,
-                                'puedes optimizarlo',
-                                1000,
-                                'puedes implementarlo',
-                                1000,
-                                'puedes desarrollarlo',
-                                1000
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            repeat={Infinity}
-                            className="font-bold text-secondary"
-                        />
+            <div className="z-20 grid items-center h-full p-6 pt-24 pb-10 md:pt-20 md:pb-4 md:pr-12 md:grid-cols-2">
+                <Image
+                    src="/home-4.png"
+                    priority
+                    width="520"
+                    height="520"
+                    alt="Avatar"
+                    className="ml-4 md:ml-8 drop-shadow-[0_0_22px_rgba(255,122,0,0.25)]"
+                />
+
+                <div className="flex flex-col items-end justify-center max-w-md ml-auto">
+
+                    <h1 className="mb-4 text-xl leading-tight text-right md:text-3xl md:mb-5">
+                        Se você pode imaginar,
+                        {" "}
+                        <span className="font-bold bg-gradient-to-r from-[#ff7a00] to-[#ff9b28] bg-clip-text text-transparent">
+                            eu posso automatizar.
+                        </span>
                     </h1>
 
-                    <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                        Como desarrollador frontend y creador de contenido, me dedico a combinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
+                    <p className="mb-4 text-lg leading-relaxed text-right md:text-[1.1rem] md:mb-5">
+                        Especialista em automação, integrações e No-Code.
+                        <br />
+                        Trabalho com n8n, Make, APIs &amp; Webhooks, Bubble, FlutterFlow, WeWeb, Supabase e PostgreSQL, criando soluções digitais rápidas e inteligentes.
+                        <br />
+                        Do protótipo no Figma à publicação em WordPress ou plataformas No-Code, ajudo você a tirar ideias do papel com menos código e mais resultado.
                     </p>
 
-                    <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
-                        <a href="/projects" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
-                            Ver proyectos
+                    <div className="flex flex-wrap items-center justify-center gap-3 md:justify-end md:gap-4">
+                        <a
+                            href="/services"
+                            className="px-4 py-2 my-2 text-md font-medium text-white border-2 border-secondary rounded-xl cursor-pointer bg-secondary transition duration-300 shadow-[0_0_8px_rgba(255,122,0,0.35)] hover:shadow-[0_0_12px_rgba(255,122,0,0.45)] hover:scale-[1.03]"
+                        >
+                            Quero automatizar meu projeto
                         </a>
-                        <a href="/contact"
-                            className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary" >
-                            Contacta conmigo
+                        <a
+                            href="/portfolio"
+                            className="px-4 py-2 my-2 text-md font-medium text-secondary border-2 border-secondary rounded-xl cursor-pointer bg-transparent transition duration-300 hover:bg-secondary/10 hover:shadow-[0_0_12px_rgba(255,122,0,0.35)] hover:scale-[1.03]"
+                        >
+                            Ver portfólio
                         </a>
                     </div>
+
+                    <div className="flex flex-wrap justify-center md:justify-end gap-2 mt-4 text-[0.8rem]">
+
+                        {[
+                            "n8n",
+                            "Make",
+                            "APIs REST",
+                            "Webhooks",
+                            "Bubble (básico)",
+                            "FlutterFlow (básico)",
+                            "WeWeb (básico)",
+                            "Supabase",
+                            "PostgreSQL",
+                            "JavaScript",
+                            "Node.js",
+                            "Python",
+                            "Java",
+                            "Docker",
+                            "GitHub",
+                            "Figma",
+                            "WordPress",
+                        ].map((skill) => (
+                            <span
+                                key={skill}
+                                className="px-3 py-1.5 rounded-[12px] border border-white/10 bg-white/5 text-gray-200"
+                            >
+
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
                 </div>
+
             </div>
         </div>
     );

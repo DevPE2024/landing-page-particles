@@ -24,6 +24,18 @@ main {
   background-color: #f5741c;
 }
 
+/* Garantir que os três pontinhos (paginação) do Swiper fiquem alinhados abaixo dos cards, dentro do slider */
+.swiper-pagination {
+  position: absolute !important;
+  bottom: 14px !important;
+  top: auto !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transform: none !important;
+  text-align: center;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

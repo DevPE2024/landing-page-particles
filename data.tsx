@@ -1,33 +1,22 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Facebook, Instagram, MessageCircle, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Settings, Link2, Layers, Database, PenTool, MonitorSmartphone } from "lucide-react";
 
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Linkedin size={22} strokeWidth={2} color="rgba(255,255,255,0.9)" />,
+        src: "https://www.linkedin.com/in/moises-pereira-3a013767/",
     },
     {
         id: 2,
-        logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Instagram size={22} strokeWidth={2} color="rgba(255,255,255,0.9)" />,
+        src: "https://www.instagram.com/moisespe2010/",
     },
     {
         id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 4,
-        logo: <Rss size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Facebook size={22} strokeWidth={2} color="rgba(255,255,255,0.9)" />,
+        src: "https://www.facebook.com/moises.pereira.543908/?locale=pt_BR",
     },
 ];
-
 
 export const itemsNavbar = [
     {
@@ -65,60 +54,64 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
+        title: "Especialista em Automação & Integrações (Freelancer / Consultor)",
+        subtitle: "Moises Pereira — Autônomo",
+        description:
+            "Desenvolvo automações avançadas usando n8n, Make, APIs REST, Webhooks, Supabase e PostgreSQL, criando fluxos inteligentes para negócios digitais. Atuo integrando plataformas, otimizando processos, reduzindo custos e acelerando operações de clientes que precisam de soluções rápidas e escaláveis.",
+        date: "2025 – Atual",
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
+        title: "Criador de Soluções No-Code",
+        subtitle: "Projetos Pessoais / Portfólio",
+        description:
+            "Criação de aplicativos e sistemas usando Bubble, FlutterFlow e WeWeb, abordando autenticação, banco de dados, workflows e integrações com serviços externos. Desenvolvimento de dashboards, automações híbridas e protótipos funcionais baseados em IA e No-Code.",
+        date: "2024 – 2025",
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
+        title: "Desenvolvedor de Integrações e APIs (Independente)",
+        subtitle: "Projetos via GitHub / Freelance",
+        description:
+            "Construção de integrações personalizadas utilizando Node.js, Python, JavaScript, Docker e APIs REST. Criação de middlewares, webhooks personalizados e serviços de automação para operações de marketing, vendas e atendimento.",
+        date: "2023 – 2024",
     },
     {
         id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
+        title: "Designer & Prototyping UI/UX",
+        subtitle: "Figma / WordPress / Projetos Pessoais",
+        description:
+            "Criação de protótipos, wireframes e interfaces utilizando Figma. Implementação de sites e landing pages otimizadas em WordPress, integrando automações e formulários inteligentes.",
+        date: "2022 – 2023",
     },
-]
+];
 
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 10,
-        text: "Años de experiencia",
+        endCounter: 5,
+        text: "Anos de experiência",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 1,
-        endCounter: 80,
-        text: "Clientes satisfechos",
+        endCounter: 12,
+        text: "Clientes atendidos",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 220,
-        text: "Proyectos finalizados",
+        endCounter: 130,
+        text: "Projetos finalizados",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
-        endCounter: 30,
-        text: "Premios ganadores",
+        endCounter: 12,
+        text: "Ferramentas utilizadas",
         lineRight: false,
         lineRightMobile: false,
     },
@@ -126,29 +119,40 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        icon: <Settings />,
+        title: "Automação Avançada",
+        description:
+            "Automatizo processos com n8n e Make, conectando sistemas e eliminando tarefas manuais repetitivas. Você ganha fluxos mais rápidos, menos erros e mais tempo para focar no negócio.",
     },
     {
-        icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        icon: <Link2 />,
+        title: "Integrações via APIs",
+        description:
+            "Integro CRM, WhatsApp, e-commerce, ERPs e meios de pagamento usando APIs REST e Webhooks. Tudo conversando entre si de forma segura e estável.",
     },
     {
-        icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        icon: <Layers />,
+        title: "Soluções No-Code",
+        description:
+            "Crio sistemas em Bubble, FlutterFlow e WeWeb com autenticação, banco de dados e formulários avançados. Ideal para validar ideias e lançar produtos sem grandes equipes de desenvolvimento.",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+        icon: <Database />,
+        title: "Supabase & PostgreSQL",
+        description:
+            "Desenho a estrutura dos dados em Supabase e PostgreSQL com foco em performance e segurança, conectando regras de negócio, triggers e automações ao backend ou a fluxos No-Code.",
     },
     {
-        icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        icon: <PenTool />,
+        title: "UI/UX & Protótipos",
+        description:
+            "Desenho interfaces e protótipos no Figma focados em clareza, usabilidade e conversão. Ajudo a testar ideias e acelerar o desenvolvimento final.",
+    },
+    {
+        icon: <MonitorSmartphone />,
+        title: "Sites & Landing Pages",
+        description:
+            "Desenvolvo sites e páginas de alta conversão com Lovable, Bolt.new, WeWeb, Bubble ou WordPress. Front-end integrado com formulários, automações e sistemas internos para entregar resultados rápidos e escaláveis.",
     },
 ];
 
